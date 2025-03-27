@@ -13,19 +13,21 @@
     
    <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
-    
+   
     .big-container{
-       display: inline-block;
-       vertical-align: text-top;
-       flex-direction: row;
-       margin: 5px;
-       border: 4px solid darkslategrey;
-       background-color: rgb(219, 218, 217);
-         padding: 10 0px 10px 0px;
-         text-align: center;
-         font-family: 'prompt', sans-serif;
-         font-weight: 200;
-         max-width: 800px;
+        display: inline-block;
+        vertical-align: text-top;
+        flex-direction: row;
+        margin: 5px;
+
+        border: 4px solid darkslategrey;
+        background-color: rgb(203, 230, 203);
+        padding: 10 0px 10px 0px;
+        /* text-align: center; */
+        font-family: 'prompt', sans-serif;
+        font-weight: 200;
+        max-width: 800px;
+        width: auto;
    }
     h1{
         font-family: 'Poppins', sans-serif;
@@ -40,6 +42,7 @@
         font-weight: 400;
         font-size: 24px;
         Margin: 40px 0px 40px 0px;
+        text-align: center;  
         
     }
     h5{
@@ -48,6 +51,7 @@
         font-size: 18px;
         font-style: italic;
         margin: 40px 0px 40px 0px;
+        text-align: center;  
     }
     
     img{
@@ -55,8 +59,12 @@
        border: 4px solid grey;
        border-radius: 10px;
         margin: 10px 0px 10px 0px;
-        align-items: center;
         }
+
+    .photo{
+        text-align: center;
+    }
+
     .Architect{
         width: 40px;
         border-radius: 10px;    
@@ -66,36 +74,36 @@
         
         margin: 5px 0px 5px 0px;      
         padding-inline: 5%;
-        text-align: center;
+        
         
     }
         
 
     iframe{
         
-        margin: 20px 0px 20px px;
-        width: auto;
+        margin: 20px 10px;
+        width: inherit;
+        display: block;
         
     }
    
-.iframe-container {
+/* .iframe-container {
     position: relative;
     width: 100%;
     padding-top: 56.25%; 
-    overflow: hidden;
-    margin: 20px 0; 
-}
-
-    
+    overflow: hidden; */
+    /* margin: 20px 20px;  */
+    /* display: inline-block; */
+/* } */
 
 
     figcaption{
         font-family: 'Prompt', sans-serif;
         font-weight: 100;
         font-size: 14px;
-        margin: 10px;
+        /* margin: 10px; */
         font-style: italic;
-        padding: 10px 0px 10px 0px;
+        /* padding: 10px 0px 10px 0px; */
     }
     h5{
         font-family: 'Prompt', sans-serif;
@@ -110,8 +118,8 @@
         font-size: 15px;
         line-height: 24px;             
          margin: 10px 40px 10px 40px;      
-         text-align: center;
-               
+         text-align: left;
+
     }
     .quote {
         
@@ -133,10 +141,12 @@
     text-align: center;
     
   }
-  .iframe-container {
+  /* .iframe-container {
     position: absolute;
     width: 100%;
-    height: 100%;}
+    height: 100%;
+    margin: 50px;
+  } */
             
     @media (max-width: 600px) {
     .big-container{
@@ -261,8 +271,8 @@
     <h3>Residents battle over gentrification, displacement and density in intense
         hearing</h3>
     <h5> By Delfina Marchese</h5>
-    <img src="Arrowlinen.JPG" alt="Arrow">
-    <figcaption>Arrow Linen Supply Company. Photo by Delfina Marchese</figcaption>
+    <div class="photo"><img src="Arrowlinen.JPG" alt="Arrow">
+    <figcaption>Arrow Linen Supply Company. Photo by Delfina Marchese</figcaption></div>
     <p> As New York City continues to grapple with housing issues, Brooklyn residents are
         fearful of a new development that could shake up their neighborhood and spark
         gentrification and displacement.</p>
@@ -283,9 +293,10 @@
         the hearing via Zoom, and said he lives a block away from the site.  “What infrastructure 
         are we going to have to support thousands of additional residents? What schools are 
         their children going to? We are at capacity; we cannot handle this monstrosity.” </p>
-       <div class="Iframe-container">
+       <!-- <div class="iframe-container"> -->
         <iframe title="Median Income and Rent Burden" aria-label="Bullet Bars" id="datawrapper-chart-uDIMX" src="https://datawrapper.dwcdn.net/uDIMX/4/" scrolling="no" frameborder="0" style="width: 100; min-width: 100% !important; border: none;" height="285" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-       </script></div>
+       </script>
+       <!-- </div> -->
         
     <p> The public hearing followed Brooklyn Borough President Antonio Reynoso’s 
         recommendation to significantly boost affordability in the project by one of a 
@@ -307,8 +318,8 @@
        <div class="quote"> <span class="specialquote"> “We are looking into the option to provide additional income-restricted housing units,” 
         Martins added in response to criticisms,  “and we could market the building as friendly 
         to Section 8 voucher holders.”</span></p> </div>
-        <img src="SourceHousing notHighrises.jpg" alt="Architect">
-        <figcaption>Architectural rendering of the Arrow Linen project. Photo by Housing Not Highrises</figcaption>
+       <div class="photo"> <img src="SourceHousing notHighrises.jpg" alt="Architect">
+        <figcaption>Architectural rendering of the Arrow Linen project. Photo by Housing Not Highrises</figcaption></div>
     <p>In June, Arrow Linen requested that the site be rezoned to a medium-residential district
          — a designation that typically allows for a mix of housing types and densities, 
         including multi-family housing. This would allow one of the buildings to be 19 stories. 
